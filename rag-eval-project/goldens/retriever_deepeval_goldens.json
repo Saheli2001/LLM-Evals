@@ -1,0 +1,92 @@
+[
+  {
+    "id": "g001",
+    "query": "How to manually label 50-500 real chat messages into billing, technical, or general issue categories?",
+    "ideal_answer": "To manually label 50-500 real chat messages, first collect actual past chats relevant to your domain (e.g., Zomato). Then, have someone read each message and assign it a category based on its content: billing issue (e.g., \"my card was charged twice\"), technical issue (e.g., \"the app crashes on login\"), or general issue (e.g., \"what are your hours?\"). This labeled collection forms your golden data set for evaluation.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g002",
+    "query": "Compare online evaluation and offline evaluation in terms of purpose and reliability of correctness.",
+    "ideal_answer": "Online evaluation primarily checks if an application is working normally but cannot guarantee correctness in all cases. Offline evaluation, by contrast, is more thorough in verifying correctness. Thus, online evaluation focuses on normal operation with limited reliability for correctness, while offline evaluation aims for accurate correctness verification.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g003",
+    "query": "How does latency impact printing a single SQL query versus a large essay in slow models?",
+    "ideal_answer": "Latency has minimal impact when printing a single SQL query because the output is short and prints quickly, even on slow models (1-1.5 seconds). However, for a large essay, latency matters significantly since slow models printing only a few characters per second would take much longer to complete the entire response.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g004",
+    "query": "Can the AI agent sequentially refactor multi-file codebases while managing dependencies and scope?",
+    "ideal_answer": "Yes, the AI agent can sequentially refactor multi-file codebases while managing dependencies and scope, as this is part of its capability to handle long-horizon engineering tasks across multiple files.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g005",
+    "query": "What is the TruthfulQA dataset’s composition, question categories, and answer validation format?",
+    "ideal_answer": "The TruthfulQA dataset contains 817 questions across 38 categories. For each question, there are four answer options, including correct and incorrect answers, with sources attached. The task is to identify the correct answer from the given options.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g006",
+    "query": "How to iteratively generate, cache, and select embeddings with varied chunk/overlap to minimize costs?",
+    "ideal_answer": "To minimize costs when generating embeddings with varied chunk sizes and overlaps, you can iteratively experiment with different settings but cache the embeddings for preferred configurations (e.g., chunk size 1000, overlap 50). This avoids repeated embedding calls for the same data. Implement caching to reuse embeddings across experiments, and select the best embedding setting after testing multiple versions. A detailed solution will be provided in the next class.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g007",
+    "query": "If all evals pass, could unseen issues still arise in RAG’s real-world deployment?",
+    "ideal_answer": "Yes, even if all evals pass, unseen issues can still arise in real-world deployment due to factors beyond the retriever, generator, and their pipeline, such as data distribution shifts, user input variability, or integration challenges.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g008",
+    "query": "What are the dataset, run config, scoring, and aggregation components in a benchmark?",
+    "ideal_answer": "In a benchmark, the four components are: 1) Dataset or task, which provides the data to test the model; 2) Run configuration, which defines how the model is executed; 3) Scoring method, which measures the model's performance on the task; and 4) Aggregation method, which combines individual scores into an overall result.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g009",
+    "query": "Explain how student score distribution shifted over weeks and identify causes for sudden high scores.",
+    "ideal_answer": "Over the weeks, the student score distribution initially centered around moderate scores (e.g., 300, 456, 700), forming a baseline. However, in a particular week, the distribution shifted with many high scores (700, 800, 900) appearing suddenly. This shift could indicate a change in performance or an external factor, such as an exceptionally intelligent student taking the exam or other underlying causes, which requires investigation to identify the exact reason.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g010",
+    "query": "How do cost limits, latency requirements, and deployment choices compare in building a Text-to-SQL app?",
+    "ideal_answer": "Cost limits require keeping expenses under 3 lakh rupees per month, latency must stay within 2-3 seconds, and deployment favors using reliable public APIs over self-hosting to ensure robustness and reduce technical overhead.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g011",
+    "query": "Identify advanced platforms for real-time telemetry and user feedback aggregation post-deployment.",
+    "ideal_answer": "For real-time telemetry and user feedback aggregation post-deployment, you can use Langsmith, Lansfuse, or Confident AI as advanced platforms to capture latency, cost, and user feedback signals effectively.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g012",
+    "query": "How does testing LLMs on human exams like SAT versus Gao Kao compare in evaluating their knowledge?",
+    "ideal_answer": "Testing LLMs on human exams like the SAT or Gao Kao allows direct comparison of their knowledge to average human performance, providing a clear, standardized measure. This approach, used in benchmarks like AGI Eval (2022-2023), avoids creating new tests and leverages established, rigorous exams to evaluate LLM capabilities across different educational systems.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g013",
+    "query": "How does evaluating system paper correctness differ when human marks are unavailable versus when they are provided?",
+    "ideal_answer": "When human marks are unavailable, the system cannot directly compare its evaluation to a human benchmark, making it difficult to determine if the system's assessment is correct. In contrast, when human marks are provided, the system can compare its results against these marks to evaluate accuracy. Without human marks, verifying the correctness of the system's evaluation in real-time or production is challenging.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g014",
+    "query": "What are the two scoring methods: direct answer generation (A-D) versus max log-probability selection?",
+    "ideal_answer": "The two scoring methods are: (1) the model directly generates an answer choice (A, B, C, or D), and (2) the model outputs log probabilities for each choice, with the highest probability indicating the selected answer.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g015",
+    "query": "How critical is data accuracy in IPL stats apps to prevent fan backlash and ensure leaderboard verification?",
+    "ideal_answer": "Data accuracy is extremely critical in IPL stats apps to prevent fan backlash, as cricket fans are very particular about records. Incorrect information, like attributing the most runs to the wrong player, can lead to public embarrassment and loss of credibility. Ensuring correctness is essential, especially since screenshots may be shared on social media. Verification through leaderboards and coding checks, such as accurate SQL generation, is necessary to maintain this quality.",
+    "source": "TODO-verify"
+  }
+]
