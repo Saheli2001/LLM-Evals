@@ -49,7 +49,7 @@ def run(retriever):
         hyperparameters={
             "retriever": "reranker",          # vs "reranked" when you swap it in
             "embedding_model": "text-embedding-3-large",
-            "chunk_size": 1000,
+            "chunk_size": 500,
             "chunk_overlap": 150,
             "top_k": 3,
             "judge_model": JUDGE_MODEL,
